@@ -7,10 +7,11 @@
  *  Uses DNA2 Model and ANM Protein Model and CG DNA model
  */
 
+//Looks like CG-interaction parameters are defined in here.
 
 #include "CGDNAInteraction.h"
-#include <sstream>
-#include <fstream>
+#include <sstream> //String stream
+#include <fstream> //file stream
 
 #include "../Particles/DNANucleotide.h"
 #include "../Particles/ANMParticle.h"

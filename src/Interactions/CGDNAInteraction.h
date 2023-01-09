@@ -74,11 +74,11 @@ protected:
         return _check_repulsion_smoothness_quart(sigma,rstar,b,rc);
     }
 
-    static number pow6(number x){
+    static number pow6(number x){ //x^6
         return SQR(x)*SQR(x)*SQR(x);
     }
 
-    static number pow14(number x){
+    static number pow14(number x){ //x^14
         return SQR(x)*SQR(x)*SQR(x)*SQR(x)*SQR(x)*SQR(x)*SQR(x);
     }
 
