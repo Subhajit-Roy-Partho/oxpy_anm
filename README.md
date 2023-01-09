@@ -61,3 +61,7 @@ Internally, oxDNA uses the following libraries, which are included in the source
 * [pybind11](https://github.com/pybind/pybind11)
 
 As far as I know, this is compatible with their licenses. If you are a developer or a mantainer of one of these projects and you think that oxDNA does not comply with your license, please contact us.
+
+
+## File direction:
+
