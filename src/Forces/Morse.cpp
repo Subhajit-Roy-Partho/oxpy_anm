@@ -43,7 +43,8 @@ std::tuple<std::vector<int>, std::string> Morse::init(input_file &inp) {
 
 	std::string description = Utils::sformat("Morse (D=%g, a=%g, r0=%g, ref_particle=%d, PBC=%d)", _D, _a, _r0, _ref_id, PBC);
 
-    graph_data();
+    // For Debugging
+    // graph_data();
 
 	return std::make_tuple(std::vector<int>{_particle}, description);
 }
@@ -64,7 +65,7 @@ LR_vector Morse::value(llint step, LR_vector &pos) {   // Negative of Force
 
 number Morse::potential(llint step, LR_vector &pos) {
 	LR_vector dr = _distance(pos, CONFIG_INFO->box->get_abs_pos(_p_ptr));
-	return _D*pow(1-exp(-_a*dr.module()), 2);
+	return _D*pow(1-exp(-_a*dr.module()), 2) - _D;
 }
 
 void Morse::graph_data(){
